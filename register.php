@@ -15,7 +15,7 @@ if (!$conn) {
     echo "Connection Succesfull <br>";
 }
 
-$query="insert into `personal`values(`$name`,`$fname`,`$phone`,`$cnic`)";
+$query="insert into `personal`values('$name','$fname','$phone','$cnic')";
  	 	 	 
 $result = mysqli_query($conn, $query);
 
